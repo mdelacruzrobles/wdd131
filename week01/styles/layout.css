@@ -1,0 +1,48 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+
+ }
+ body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 0.4fr auto;
+    min-height: 100vh;
+}
+h1{
+    background-color: rgb(64, 62, 62);
+    color: white;
+    padding: 2rem;
+}
+header {
+    grid-column: 1 / -1;
+
+}
+
+main {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+div{
+    background-color: rgb(172, 170, 170);
+}
+footer {
+    grid-column: 1 / -1;
+    background-color: rgb(64, 62, 62);
+    padding: 2rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
