@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+header {
+    padding: 0;
+}
 
 #course-title {
     background-color: rgb(208, 208, 3);
@@ -10,6 +13,7 @@
     text-align: center;
     padding: 10px;
     display: block;
+    font-size: large;
 }
 .pages {
     display: flex;
