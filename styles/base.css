@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: "Roboto", sans-serif;
+}
 header {
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 #course-title {
@@ -14,6 +18,9 @@ header {
     padding: 10px;
     display: block;
     font-size: large;
+}
+span {
+    display: block;
 }
 .pages {
     display: flex;
@@ -43,7 +50,7 @@ h1 {
 main {
     display: grid;
     grid-template-columns: 1fr 0.4fr;
-    grid-template-rows: 2;
+    grid-template-rows: 2fr;
     margin: 7px 6%;
 }
 
