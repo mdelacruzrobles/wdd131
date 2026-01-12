@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#course-title {
+    background-color: rgb(208, 208, 3);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+.pages {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.pages a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 2;
+    margin: 7px 6%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 5px;
+}
+.card h3 {
+    text-align: center;
+    background-color: rgb(208, 208, 3);
+    margin: 0;
+    padding: 6px;  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.about {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.about p {
+    margin-top: 10px;
+}
+.profile {
+    width: 150px;
+    margin: 0 15px 10px 0;
+    height: auto;
+}
+
+.city-parent h4{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.city {
+   display: grid;
+   grid-template-columns: 150px 0.73fr;
+   gap: 20px;
+   margin-left: 10px;
+   align-items: start;
+}
+.city
+.style {
+    width: 150px;
+    height: auto;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+footer{
+    background-color: rgb(208, 208, 3);
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
