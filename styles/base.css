@@ -19,9 +19,7 @@ header {
     display: block;
     font-size: large;
 }
-span {
-    display: block;
-}
+
 .pages {
     display: flex;
     background-color: black;
@@ -111,8 +109,18 @@ img {
 }
 
 .navigation {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 40px;
+    padding: 10px;
+
+}
+.navigation a {
+    display: block;
+    margin-bottom: 10px;
+}
+.title {
+    margin-top: 5px;
+    padding: 10px;
 }
 
 footer{
