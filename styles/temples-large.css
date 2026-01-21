@@ -40,3 +40,8 @@ figure img {
     height: auto;
     display: block;
 }
+figcaption {
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+}
