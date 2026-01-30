@@ -59,6 +59,10 @@ section h2{
   border-radius: 10px;
 }
 
+section h2::after{
+  content: " ⛅";
+}
+
 section p{
   margin: 10px;
 }
