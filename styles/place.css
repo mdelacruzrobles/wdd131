@@ -1,21 +1,21 @@
 :root{
-    --primary-color: red;
-    --bg-color: rgba(255, 255, 255, 0.9);
-    --font-color: white;
-    --font:"Roboto", sans-serif;
+  --primary-color: red;
+  --bg-color: rgba(255, 255, 255, 0.9);
+  --font-color: white;
+  --font: "Roboto", sans-serif;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-main{
+body{
   font-family: var(--font);
 }
 
-h1 {
+h1{
   background-color: var(--primary-color);
   color: var(--font-color);
   text-align: center;
@@ -23,50 +23,92 @@ h1 {
   font-size: 2rem;
 }
 
-img {
+img{
   width: 100%;
   height: auto;
   display: block;
 }
 
-.label {
+.label{
   font-weight: bold;
 }
 
-.grid-parent {
+.grid-parent{
   display: block;
 }
 
 .top-card,
-.bottom-card {
+.bottom-card{
   margin: 1rem;
   padding: 1rem;
   background-color: var(--bg-color);
   text-align: center;
 }
+
 .svg-icon{
   display: block;
   width: 130px;
   height: auto;
   margin: 15px auto;
-  
 }
 
-section h2 {
+section h2{
   padding: 10px 20px;
   color: var(--font-color);
   background-color: var(--primary-color);
   border-radius: 10px;
-
 }
 
-section p {
+section p{
   margin: 10px;
 }
 
-footer {
+footer{
   background-color: var(--primary-color);
   color: var(--font-color);
   text-align: center;
   padding: 20px;
 }
+
+@media (min-width: 600px){
+
+  h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+
+  .grid-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hero hero";
+    position: relative;
+  }
+
+  picture{
+    grid-area: hero;
+  }
+
+  .top-card{
+    grid-area: hero;
+    justify-self: start;
+    align-self: start;
+    text-align: right;
+    margin: 4rem;
+    padding: 2rem;
+  }
+
+  .bottom-card{
+    grid-area: hero;
+    justify-self: end;
+    align-self: end;
+    text-align: right;
+    margin: 4rem;
+    padding: 2rem;
+  }
+
+  .svg-icon{
+    display: none;
+  }
+
+}
+
