@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Place</title>
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+    <main>
+        <div class="grid-parent">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/machu-picchu.webp">
+                <img src="images/rainbow-mountain.webp" alt="Rainbow Mountain in Peru">
+            </picture>
+            <section class="top-card">
+                <h2>Data</h2>
+                <div>
+                    <p><span class="label">Area:</span> 1,285,216 sq km</p>
+                    <p><span class="label">Population:</span> 34,576,665</p>
+                    <p><span class="label">Capital:</span> Lima</p>
+                    <p><span class="label">Language:</span> Spanish, Quechua, Aymara</p>
+                    <p><span class="label">Currency:</span> Peruvian Sol(PEN)</p>
+                    <p><span class="label">Time Zone:</span> UTC −5</p>
+                    <p><span class="label">Calling Code:</span> +51</p>
+                    <p><span class="label">Internet TLD:</span> .pe</p>
+                </div>
+            </section>
+            <section class="bottom-card">
+                <h2 class="icon">Weather</h2>
+                <img class="svg-icon" src="images/cloud.svg" alt="logo">
+                <div>
+                    <p><span class="label">Temperature:</span> 0°C</p>
+                    <p><span class="label">Conditions:</span> Mostly cloudy</p>
+                    <p><span class="label">Wind:</span> 20 km/h</p>
+                    <p><span class="label">Wind Chill:</span> <span id="windChillValue"></span>°C</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Miguel De La Cruz | Connecticut USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
