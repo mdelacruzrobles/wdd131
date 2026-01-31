@@ -1,5 +1,5 @@
 :root{
-  --primary-color: red;
+  --primary-color: #b00000;
   --bg-color: rgba(255, 255, 255, 0.9);
   --font-color: white;
   --font: "Roboto", sans-serif;
@@ -59,7 +59,7 @@ section h2{
   border-radius: 10px;
 }
 
-section h2::after{
+.bottom-card h2::after{
   content: " ⛅";
 }
 
