@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+header{
+    background-color: rgb(46, 1, 46);
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+.formstyle {
+    background-color: rgb(201, 200, 200);
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+
+}
+.formstyle label{
+    padding: 3px;
+    display: block;
+}
+.formstyle input[type="date"],
+.formstyle input[type="text"],
+.formstyle select,
+.formstyle textarea
+{
+    display: block;
+    padding: 0.4rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    max-width: 500px;
+}
+.formstyle input[type="checkbox"]{
+    margin-right: 6px;
+}
+.rating-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.rating-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-grid input[type="radio"] {
+    margin-bottom: 0.2rem;
+}
+.formstyle input[type="submit"]
+{
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 900;
+}
+.optional {
+    color: blue;
+}
+footer{
+    background-color: rgb(46, 1, 46);
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
