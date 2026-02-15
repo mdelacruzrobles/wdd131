@@ -179,13 +179,25 @@ function createGameCard(gamesArray) {
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     const selectedLevel = experienceSelect.value;
+    localStorage.setItem('lastSelectedLevel', selectedLevel);
     if (selectedLevel === "Beginner") {
         createGameCard(beginnerGames);
-    } 
-    else if (selectedLevel === "Intermediate") {
+    } else if (selectedLevel === "Intermediate") {
         createGameCard(intermediateGames);
-    } 
-    else if (selectedLevel === "Advanced") {
+    } else if (selectedLevel === "Advanced") {
         createGameCard(advancedGames);
+    }
+});
+window.addEventListener('load', () => {
+    const lastLevel = localStorage.getItem('lastSelectedLevel');
+    if (lastLevel) {
+        experienceSelect.value = lastLevel;
+        if (lastLevel === "Beginner") {
+            createGameCard(beginnerGames);
+        } else if (lastLevel === "Intermediate") {
+            createGameCard(intermediateGames);
+        } else if (lastLevel === "Advanced") {
+            createGameCard(advancedGames);
+        }
     }
 });
