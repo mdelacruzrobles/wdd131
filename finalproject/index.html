@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="A beginner-friendly guide to discovering modern board games based on difficulty and group size.">
+    <meta name="author" content="Miguel De La Cruz">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+    <title>Beginner’s Guide to Modern Board Games</title>
 </head>
 <body>
+    <header>
+        <h1>Beginner’s Guide to Modern Board Games</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="selector.html">Selector</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu" ></button>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Welcome to Beginner’s Guide to Modern Board Games</h2>
+        </section>
+        <section id="about">
+            <h2>The Evolution of Board Games</h2>
+            <p class="p">Board games have existed for thousands of years. Ancient civilizations played strategy games long before the modern era, and classics like chess have remained popular for centuries. These early games focused on competition, logic, and social interaction.
+                Today, we are living in a new era of board gaming. Modern board games have expanded beyond traditional formats, introducing innovative mechanics, immersive themes, and cooperative gameplay. Instead of relying purely on luck, many modern games encourage meaningful decisions, teamwork, and strategic thinking. This evolution has created exciting experiences for players of all ages who are looking to discover something new at the table.</p>
+        </section>
+        <section id="featured-games">
+            <img src="images/boardgames.webp" alt="boardgames" class="hero-img">
+            <h2>Featured Games</h2>
+            <div class="game-grid">
+                <div class="game-card">
+                    <h3 class="feature-game-title">Ticket to Ride</h3>
+                    <img src="images/ticket-to-ride.webp" alt="ticket to ride" class="grid-img" loading="lazy">
+                    <p>Players: 2-5 | Time: 60 min | Difficulty: Beginner</p>
+                </div>
+                <div class="game-card">
+                    <h3 class="feature-game-title">Catan</h3>
+                    <img src="images/catan.webp" alt="catan" class="grid-img" loading="lazy">
+                    <p>Players: 3-4 | Time: 90 min | Difficulty: Intermediate</p>
+                </div>
+                <div class="game-card">
+                    <h3 class="feature-game-title">Root</h3>
+                    <img src="images/root.webp" alt="root" class="grid-img" loading="lazy">
+                    <p>Players: 2-4 | Time: 90-120 min | Difficulty: Advanced</p>
+                </div>
+            </div>
+            <div class="cta">
+                <h3>Discover Modern Board Games</h3>
+                <p>Step into the world of modern board games, where strategy, storytelling, and laughter come together. Find the perfect game for your group and turn any night into an unforgettable experience.</p>
+                <a href="games.html" class="button">Click me to explore more games!</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Miguel De La Cruz | Connecticut USA</p>
+        <p id="lastModified"></p>
+    </footer>
     
 </body>
 </html>

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+header{
+    background-color: #cc6f00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    color: white;
+    font-family: "Chewy", system-ui;
+}
+
+#hero {
+    background-color: #ffe5b4;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+#hero h2 {
+    font-size: 2rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: xx-large;
+    color: white;
+}
+#menu.open::before {
+	content: "X";
+    color: white;
+}
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation.open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #cc6f00;
+}
+
+.navigation li {
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+h2,
+h3
+{
+    text-align: center;
+    margin: 1rem;
+    font-family: "Chewy", system-ui;
+    text-decoration: underline;
+}
+
+.feature-game-title{
+    text-align: center;
+}
+
+section {
+    padding: 1rem 1rem;
+}
+
+.game-card{
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+div p,
+.p {
+    font-size: large;
+    margin: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    justify-items: center;
+    
+}
+.grid-img{
+    width: 100%;
+    height: 300px;
+}
+.cta p{
+    text-align: center;
+}
+.button{
+    margin: 1rem;
+    background-color: #cc6f00;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    display: block;
+    text-align: center;
+}
+
+
+footer{
+    background-color: #cc6f00;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; 
+    
+}
+@media screen and (min-width: 720px){
+    nav {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    position: static;
+    padding: 10px;
+    list-style: none;
+    }
+
+#menu {
+    display: none;
+    }
+
+h2,
+h3
+{
+    text-align: left;
+}
+
+.game-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    
+}
+
+.grid-img{
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    
+}
+.cta p{
+    text-align: left;
+}
+.button{
+    display: inline;
+}
+}

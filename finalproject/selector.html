@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/selector.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/selector.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Beginner's Guide to Modern Board Games</h1>
+        <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="selector.html">Game Selector</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+        </nav>
+        <button type="button" id="menu" ></button>
+    </header>
+    <main>
+        <h2>Find the Perfect Game</h2>
+        <section id="selector-form">
+            <form id="gameForm">
+            <label for="experience">Experience Level</label>
+            <select id="experience" name="experience" required>
+            <option value="" disabled selected>Select experience level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+            </select>
+            <button type="submit">Find Games</button>
+            </form>
+        </section>
+        <section id="results">
+        <h3>Recommended Games</h3>
+        <div id="resultsContainer" class="game-grid">
+            <!-- JavaScript will insert filtered game cards here -->
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Miguel De La Cruz | Connecticut USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
