@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel De La Cruz">
+    <meta name="description" content="Use our game selector to easily find board games by players, difficulty, and playtime. Perfect for beginners and enthusiasts alike.">
     <link rel="stylesheet" href="styles/selector.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/selector.js" defer></script>
-    <title>Document</title>
+    <title>Selector</title>
 </head>
 <body>
     <header>
@@ -24,10 +26,12 @@
         <button type="button" id="menu" ></button>
     </header>
     <main>
+        <section id="hero">
         <h2>Find the Perfect Game</h2>
+        </section>
         <section id="selector-form">
             <form id="gameForm">
-            <label for="experience">Experience Level</label>
+            <label for="experience" class="label">Experience Level</label>
             <select id="experience" name="experience" required>
             <option value="" disabled selected>Select experience level</option>
             <option value="Beginner">Beginner</option>
@@ -40,7 +44,6 @@
         <section id="results">
         <h3>Recommended Games</h3>
         <div id="resultsContainer" class="game-grid">
-            <!-- JavaScript will insert filtered game cards here -->
         </div>
         </section>
     </main>

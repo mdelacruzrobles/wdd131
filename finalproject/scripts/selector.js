@@ -149,29 +149,33 @@ const advancedGames = [
 
 function createGameCard(gamesArray) {
     resultsContainer.innerHTML = "";
-    const gridDiv = document.createElement('div');
-    gridDiv.classList.add('game-grid');
     gamesArray.forEach(game => {
         const div = document.createElement('div');
+        div.classList.add('game-card'); 
+        
         const img = document.createElement('img');
         img.src = game.imageUrl;
         img.alt = game.game;
         img.loading = "lazy";
+        
         const h4 = document.createElement('h4');
-        const p1 = document.createElement('p')
-        const p2 = document.createElement('p')
+        h4.textContent = game.game;
+        
+        const p1 = document.createElement('p');
+        p1.textContent = `Players: ${game.info}`;
+        
+        const p2 = document.createElement('p');
+        p2.textContent = `Description: ${game.description}`;
+        
         div.appendChild(img);
         div.appendChild(h4);
         div.appendChild(p1);
         div.appendChild(p2);
-        h4.textContent = game.game;
-        p1.textContent = `Players: ${game.info}`;
-        p2.textContent = `Description: ${game.description}`;
-        div.classList.add(`game-card`);
-        gridDiv.appendChild(div);
+        
+        resultsContainer.appendChild(div);
    });
-        resultsContainer.appendChild(gridDiv);
 }
+
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     const selectedLevel = experienceSelect.value;
