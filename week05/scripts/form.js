@@ -29,10 +29,26 @@ const products = [
   }
 ];
 const selectElement = document.getElementById("product")
-const newSelectOption = document.createElement("option");
-products.forEach(product => {
-    const newSelectOption = document.createElement("option");
-    newSelectOption.textContent = product.name;
-    newSelectOption.value = product.id;
-    selectElement.append(newSelectOption);
-})
+if (selectElement) {
+  products.forEach(product => {
+    const option = document.createElement("option");
+    option.textContent = product.name;
+    option.value = product.id;
+    selectElement.append(option);
+  });
+}
+const form = document.querySelector("form");
+
+if (form) {
+  form.addEventListener("submit", function () {
+    let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+    reviewCount++;
+    localStorage.setItem("reviewCount", reviewCount);
+  });
+}
+const reviewDisplay = document.getElementById("reviewTotal");
+
+if (reviewDisplay) {
+  const count = localStorage.getItem("reviewCount") || 0;
+  reviewDisplay.textContent = count;
+}
